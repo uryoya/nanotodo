@@ -1,0 +1,29 @@
+{
+  "description": "express+prisma implementation",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/main.ts",
+    "start": "node dist/main.js",
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "prisma": "npx prisma",
+    "prisma:push": "npx prisma db push",
+    "prisma:ui": "npx prisma studio",
+    "prisma:gen": "npx prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.16.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.10",
+    "prettier": "^3.3.2",
+    "prisma": "^5.16.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
