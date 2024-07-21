@@ -1,0 +1,15 @@
+[package]
+name = "nanotodo-with-shuttle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.4"
+serde = { version = "1.0.204", features = ["derive"] }
+shuttle-axum = "0.46.0"
+shuttle-runtime = "0.46.0"
+shuttle-shared-db = { version = "0.46.0", features = ["postgres", "sqlx"] }
+sqlx = { version = "0.7.4", features = ["uuid"] }
+tokio = "1.28.2"
+tower = "0.4.13"
+tower-http = { version = "0.5.2", features = ["cors"] }
